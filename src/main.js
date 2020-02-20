@@ -4,19 +4,20 @@ import vuetify from './plugins/vuetify';
 import VueTextAreaAutosize from 'vue-textarea-autosize';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import * as keys from './config'; 
 
 Vue.use( VueTextAreaAutosize );
 
 Vue.config.productionTip = false;
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDMYZm1EAaJ5Zb5yMms2JSRME5Mi895xA8",
-  authDomain: "vue-calendar-f2b0d.firebaseapp.com",
-  databaseURL: "https://vue-calendar-f2b0d.firebaseio.com",
-  projectId: "vue-calendar-f2b0d",
-  storageBucket: "vue-calendar-f2b0d.appspot.com",
-  messagingSenderId: "772483231562",
-  appId: "1:772483231562:web:ae6cd98f2fe591e4f91bb3"
+  apiKey: keys.apiKey,
+  authDomain: keys.authDomain,
+  databaseURL: keys.databaseURL,
+  projectId: keys.projectId,
+  storageBucket: keys.storageBucket,
+  messagingSenderId: keys.messagingSenderId,
+  appId: keys.appId
 });
 
 
